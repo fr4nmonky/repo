@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+@import "global";
+@import "masthead";
+@import "sidebar";
+@import "services";
+@import "callout";
+@import "portfolio";
+@import "footer";
+@import "bootstrap-overrides";
+
+$medida: 100px;
+.logo__img {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  width: $medida;
+  height: $medida;
+
+  line-height: $medida/2;
+  z-index: 999;
+}
+
+.logo__img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
